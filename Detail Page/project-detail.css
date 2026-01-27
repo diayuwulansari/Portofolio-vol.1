@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.project-detail {
+  padding: 60px 5%;
+}
+
+.project-container {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+/* KIRI */
+.project-info {
+  flex: 1.2;
+  margin-top: -20px; /* naik ke atas */
+}
+
+.project-info h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.project-info h3 {
+  font-size: 20px;
+  margin: 14px 0 8px;
+  color: #444;
+  margin-bottom: 4px; /* pepet ke paragraf */
+}
+
+.project-info p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.project-info h3 + p {
+  margin-top: 0;
+}
+
+/* TOOLS */
+.tools {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+
+.tool-item {
+  display: flex;
+  flex-direction: column; /* ICON ATAS, TEXT BAWAH */
+  align-items: center;
+  gap: 6px;
+  width: 70px;
+  text-align: center;
+}
+
+.tool-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+.tool-item span {
+  font-size: 13px;
+  color: #444;
+}
+
+/* KANAN */
+.project-image {
+  flex: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* center atas–bawah */
+}
+
+.project-image img {
+  width: 200%;
+  max-width: 1000px;
+  height: auto;
+  display: block;
+}
+
+.btn-back-fixed {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 12px 22px;
+  background: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 14px;
+  z-index: 999;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn-back-fixed:hover {
+  background: #000;
+  transform: translateY(-2px);
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-info h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .project-info h3 {
+    margin-bottom: 6px;
+  }
+
+  .project-info {
+    text-align: center;
+  }
+
+  .project-info p {
+    line-height: 1.6;
+  }
+
+  .tools {
+    justify-content: center;
+  }
+
+  .btn-back-fixed {
+    padding: 10px 18px;
+    font-size: 13px;
+    bottom: 16px;
+    right: 16px;
+  }
+}
