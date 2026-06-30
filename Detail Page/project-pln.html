@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -284,4 +285,292 @@ document.querySelectorAll('a,button').forEach(el=>{
 });
 </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redesign Aplikasi PLN NPS — Dia Ayu Wulansari</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Detail Page/project-detail.css">
+</head>
+<body>
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<nav>
+  <a href="../index.html" class="logo">Dia Ayu<span>.</span></a>
+  <span class="nav-tag">Case Study</span>
+  <a href="../index.html#projects" class="back-btn">← Kembali</a>
+</nav>
+
+<div class="proj-hero">
+  <div class="hero-bg"></div>
+  <div class="desk-mock">
+    <div class="desk-topbar">
+      <div class="desk-dot" style="background:#ef4444;opacity:.5"></div>
+      <div class="desk-dot" style="background:#eab308;opacity:.5"></div>
+      <div class="desk-dot" style="background:#22c55e;opacity:.5"></div>
+    </div>
+    <div class="desk-body">
+      <div class="desk-sidebar">
+        <div class="desk-si active"></div>
+        <div class="desk-si"></div>
+        <div class="desk-si"></div>
+        <div class="desk-si"></div>
+        <div class="desk-si"></div>
+      </div>
+      <div class="desk-main">
+        <div class="desk-header"></div>
+        <div class="desk-cards">
+          <div class="desk-card"></div>
+          <div class="desk-card"></div>
+          <div class="desk-card"></div>
+        </div>
+        <div class="desk-row" style="margin-top:6px"></div>
+        <div class="desk-row" style="width:80%"></div>
+        <div class="desk-row" style="width:60%"></div>
+        <div class="desk-row" style="margin-top:4px"></div>
+        <div class="desk-row" style="width:70%"></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="eyebrow">02 — Case Study · Internship 2024</div>
+    <h1 class="proj-title">Redesign Aplikasi<br>Internal<br><span style="-webkit-text-stroke:1px rgba(248,250,252,.18);color:transparent">PT PLN Nusantara<br>Power Service</span></h1>
+    <p class="proj-sub">Memperbaiki pengalaman pengguna aplikasi internal BUMN untuk meningkatkan kemudahan penggunaan dan efisiensi alur kerja karyawan.</p>
+    <div class="badge-row">
+      <span class="badge bd-blue">UI/UX Redesign</span>
+      <span class="badge bd-yellow">Internship Project</span>
+      <span class="badge bd-gray">Enterprise UX</span>
+      <span class="badge bd-gray">Figma</span>
+    </div>
+    <div class="hero-meta">
+      <div class="meta-item">
+        <div class="meta-lbl">Tahun</div>
+        <div class="meta-val">2024</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-lbl">Platform</div>
+        <div class="meta-val">Web App (Desktop)</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-lbl">Peran</div>
+        <div class="meta-val">UI/UX Designer Intern</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-lbl">Klien</div>
+        <div class="meta-val">PT PLN NPS</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="sec">
+    <div class="sec-ey">Overview</div>
+    <h2 class="sec-h">Latar Belakang</h2>
+    <p class="sec-p">PT PLN Nusantara Power Service (PLN NPS) adalah anak perusahaan PLN yang bergerak di bidang pemeliharaan pembangkit listrik. Sebagai perusahaan dengan ratusan karyawan, mereka memiliki aplikasi internal untuk <strong>manajemen administrasi dan sertifikasi pegawai</strong> yang sudah lama tidak diperbarui.</p>
+    <p class="sec-p">Antarmuka lama memiliki banyak masalah: navigasi yang membingungkan, alur yang tidak konsisten, dan tampilan visual yang tidak mencerminkan standar modern. Proyek internship ini berfokus pada <strong>redesain menyeluruh</strong> untuk meningkatkan produktivitas karyawan.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-ey">Problem Analysis</div>
+    <h2 class="sec-h">Sebelum vs Sesudah</h2>
+    <div class="compare-grid">
+      <div class="compare-col">
+        <div class="compare-header before">❌ Sebelum Redesign</div>
+        <div class="compare-body">
+          <div class="compare-item"><span class="ci-ico">😵</span>Navigasi tidak intuitif, pengguna sering tersesat antar menu</div>
+          <div class="compare-item"><span class="ci-ico">🐌</span>Alur pengajuan sertifikasi memerlukan banyak langkah tidak perlu</div>
+          <div class="compare-item"><span class="ci-ico">🎨</span>Tampilan visual usang, kontras warna rendah, tipografi tidak konsisten</div>
+          <div class="compare-item"><span class="ci-ico">📱</span>Tidak responsif, hanya bisa digunakan di desktop resolusi tertentu</div>
+          <div class="compare-item"><span class="ci-ico">⏱️</span>Proses input data berulang karena tidak ada fitur autofill/simpan draft</div>
+        </div>
+      </div>
+      <div class="compare-col">
+        <div class="compare-header after">✅ Sesudah Redesign</div>
+        <div class="compare-body">
+          <div class="compare-item"><span class="ci-ico">🗺️</span>Struktur navigasi hierarkis yang jelas dengan breadcrumb dan sidebar terorganisir</div>
+          <div class="compare-item"><span class="ci-ico">⚡</span>Alur sertifikasi disederhanakan dari 8 langkah menjadi 4 langkah utama</div>
+          <div class="compare-item"><span class="ci-ico">✨</span>Visual system baru dengan design token konsisten dan identitas PLN yang kuat</div>
+          <div class="compare-item"><span class="ci-ico">💻</span>Layout responsif yang berfungsi baik di berbagai ukuran layar desktop</div>
+          <div class="compare-item"><span class="ci-ico">💾</span>Fitur simpan draft dan autofill data dari profil pegawai</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-ey">Design Process</div>
+    <h2 class="sec-h">Proses Redesain</h2>
+    <div class="proc-list">
+      <div class="proc-item">
+        <div class="proc-n">01</div>
+        <div>
+          <div class="proc-t">Audit &amp; Analisis Aplikasi Lama</div>
+          <div class="proc-d">Melakukan audit menyeluruh terhadap antarmuka yang ada, mendokumentasikan semua halaman, mengidentifikasi inconsistency, dan memetakan pain point pengguna berdasarkan observasi langsung penggunaan aplikasi oleh karyawan PLN NPS.</div>
+          <div class="proc-tags"><span class="ptag">UI Audit</span><span class="ptag">Heuristic Evaluation</span><span class="ptag">User Observation</span><span class="ptag">Pain Point Mapping</span></div>
+        </div>
+      </div>
+      <div class="proc-item">
+        <div class="proc-n">02</div>
+        <div>
+          <div class="proc-t">Definisi Scope &amp; Prioritas</div>
+          <div class="proc-d">Bersama supervisor, mendefinisikan scope redesain — halaman mana yang paling kritis dan paling sering digunakan. Memprioritaskan modul sertifikasi pegawai dan dashboard utama sebagai fokus utama karena dampaknya paling besar terhadap produktivitas harian.</div>
+          <div class="proc-tags"><span class="ptag">Stakeholder Alignment</span><span class="ptag">Scope Definition</span><span class="ptag">Priority Matrix</span></div>
+        </div>
+      </div>
+      <div class="proc-item">
+        <div class="proc-n">03</div>
+        <div>
+          <div class="proc-t">Wireframing &amp; Information Architecture</div>
+          <div class="proc-d">Merancang ulang arsitektur informasi aplikasi agar lebih logis. Membuat low-fidelity wireframe untuk setiap halaman yang diredesain, memastikan alur navigasi lebih linear dan mudah diprediksi oleh pengguna.</div>
+          <div class="proc-tags"><span class="ptag">Information Architecture</span><span class="ptag">Sitemap</span><span class="ptag">Wireframe</span><span class="ptag">User Flow</span></div>
+        </div>
+      </div>
+      <div class="proc-item">
+        <div class="proc-n">04</div>
+        <div>
+          <div class="proc-t">Visual Design &amp; Prototype</div>
+          <div class="proc-d">Mengembangkan visual system baru yang konsisten dengan identitas brand PLN (kuning-biru). Membuat high-fidelity design untuk semua halaman dan prototype interaktif yang dapat digunakan untuk presentasi kepada tim teknis dan manajemen.</div>
+          <div class="proc-tags"><span class="ptag">Figma</span><span class="ptag">Design System</span><span class="ptag">High-fi UI</span><span class="ptag">Interactive Prototype</span></div>
+        </div>
+      </div>
+      <div class="proc-item">
+        <div class="proc-n">05</div>
+        <div>
+          <div class="proc-t">Presentasi &amp; Handoff</div>
+          <div class="proc-d">Mempresentasikan hasil redesain kepada tim PLN NPS, menjelaskan keputusan desain, dan melakukan handoff dokumentasi desain lengkap kepada tim pengembang agar implementasi bisa dilakukan sesuai spesifikasi.</div>
+          <div class="proc-tags"><span class="ptag">Design Presentation</span><span class="ptag">Design Handoff</span><span class="ptag">Documentation</span><span class="ptag">Annotation</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-ey">UI Preview</div>
+    <h2 class="sec-h">Tampilan Desain Baru</h2>
+    <div class="cg2">
+      <div class="mock">
+        <span class="mock-lbl">Dashboard Utama</span>
+        <div class="mock-inner"><span class="mock-ico">🖥️</span><div class="mock-note">Tambahkan screenshot<br>dashboard redesain di sini</div></div>
+      </div>
+      <div class="mock">
+        <span class="mock-lbl">Modul Sertifikasi</span>
+        <div class="mock-inner"><span class="mock-ico">📜</span><div class="mock-note">Tambahkan screenshot<br>halaman sertifikasi di sini</div></div>
+      </div>
+      <div class="mock">
+        <span class="mock-lbl">Form Pengajuan</span>
+        <div class="mock-inner"><span class="mock-ico">📋</span><div class="mock-note">Tambahkan screenshot<br>form pengajuan di sini</div></div>
+      </div>
+      <div class="mock">
+        <span class="mock-lbl">Profil Pegawai</span>
+        <div class="mock-inner"><span class="mock-ico">👤</span><div class="mock-note">Tambahkan screenshot<br>halaman profil di sini</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-ey">Additional Work</div>
+    <h2 class="sec-h">Pekerjaan Tambahan</h2>
+    <p class="sec-p">Selain redesain UI/UX, saya juga berkontribusi pada pekerjaan administrasi sertifikasi pegawai, termasuk <strong>perancangan desain sertifikat</strong> yang akan diberikan kepada pegawai yang lulus pelatihan.</p>
+    <div class="cg3">
+      <div class="ic">
+        <div class="ic-ico">🏆</div>
+        <div class="ic-lbl">Desain</div>
+        <div class="ic-v">Template Sertifikat</div>
+        <div class="ic-s">Merancang template sertifikat resmi pelatihan pegawai PLN NPS dengan branding perusahaan</div>
+      </div>
+      <div class="ic">
+        <div class="ic-ico">📁</div>
+        <div class="ic-lbl">Administrasi</div>
+        <div class="ic-v">Pengelolaan Dokumen</div>
+        <div class="ic-s">Membantu pengelolaan, pengarsipan, dan penomoran dokumen sertifikasi pegawai</div>
+      </div>
+      <div class="ic">
+        <div class="ic-ico">🖨️</div>
+        <div class="ic-lbl">Produksi</div>
+        <div class="ic-v">Cetak &amp; Pindai</div>
+        <div class="ic-s">Bertanggung jawab atas proses pencetakan dan pemindaian berkas sertifikasi</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-ey">Results</div>
+    <h2 class="sec-h">Hasil Pekerjaan</h2>
+    <div class="res-card">
+      <div class="res-num" style="font-size:1.8rem">8→4</div>
+      <div class="res-d"><strong>Penyederhanaan Alur Sertifikasi</strong><br>Proses pengajuan sertifikasi berhasil disederhanakan dari 8 langkah menjadi 4 langkah, memangkas waktu pengisian formulir secara signifikan</div>
+    </div>
+    <div class="res-card">
+      <div class="res-num">✓</div>
+      <div class="res-d"><strong>Prototype Siap Presentasi</strong><br>Menghasilkan prototype interaktif lengkap di Figma yang telah dipresentasikan kepada tim dan manajemen PLN NPS untuk dijadikan acuan pengembangan</div>
+    </div>
+    <div class="res-card">
+      <div class="res-num">↑</div>
+      <div class="res-d"><strong>Konsistensi Visual yang Lebih Baik</strong><br>Seluruh komponen UI distandardisasi dalam design system yang terdokumentasi dengan baik, memudahkan pengembang untuk mengimplementasikan dengan akurat</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-ey">Refleksi</div>
+    <h2 class="sec-h">Yang Saya Pelajari</h2>
+    <p class="sec-p">Proyek ini memberikan pengalaman pertama saya bekerja di lingkungan <strong>korporat BUMN berskala besar</strong>. Saya belajar bahwa enterprise UX memiliki tantangan berbeda dari consumer app — ada banyak stakeholder yang harus dipuaskan, constraint teknis yang kuat, dan pengguna yang sudah terbiasa dengan alur lama.</p>
+    <p class="sec-p">Pengalaman ini juga mengajarkan saya pentingnya <strong>komunikasi dengan tim non-desain</strong> — baik developer, manajemen, maupun pengguna akhir — dalam menyampaikan rationale di balik setiap keputusan desain.</p>
+    <div class="tags-row">
+      <span class="tg">Enterprise UX</span>
+      <span class="tg">Stakeholder Management</span>
+      <span class="tg">Design Handoff</span>
+      <span class="tg">Corporate Environment</span>
+      <span class="tg">Heuristic Evaluation</span>
+      <span class="tg">Design System</span>
+    </div>
+  </div>
+
+</div>
+
+<div style="border-top:1px solid var(--border);background:var(--navy2);padding:3.5rem 3rem;text-align:center">
+  <div style="font-family:'JetBrains Mono',monospace;font-size:.65rem;color:var(--accent);letter-spacing:.18em;text-transform:uppercase;margin-bottom:.9rem;display:flex;align-items:center;gap:.55rem;justify-content:center">
+    <span style="width:13px;height:1px;background:var(--accent);display:inline-block"></span>Tertarik berkolaborasi?<span style="width:13px;height:1px;background:var(--accent);display:inline-block"></span>
+  </div>
+  <h3 style="font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-bottom:.5rem">Mari Wujudkan Proyek Selanjutnya</h3>
+  <p style="font-size:.88rem;color:var(--fg2);margin-bottom:1.8rem">Saya terbuka untuk diskusi proyek baru, freelance, maupun peluang full-time.</p>
+  <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap">
+    <a href="mailto:diaayuwulansari@gmail.com" style="background:var(--blue);color:#fff;padding:.75rem 1.6rem;border-radius:4px;font-family:'Syne',sans-serif;font-weight:700;font-size:.86rem;text-decoration:none">Hubungi Saya</a>
+    <a href="index.html" style="border:1px solid var(--border2);color:var(--fg2);padding:.75rem 1.6rem;background:transparent;font-family:'JetBrains Mono',monospace;font-size:.73rem;letter-spacing:.06em;border-radius:4px;text-decoration:none">← Kembali ke Portofolio</a>
+  </div>
+</div>
+
+<div class="proj-nav">
+  <a href="project-udjaya.html" class="pn">
+    <div class="pn-dir">← Proyek Sebelumnya</div>
+    <div class="pn-name">Aplikasi Kasir UD Jaya</div>
+  </a>
+  <a href="project-estock.html" class="pn right">
+    <div class="pn-dir">Proyek Berikutnya →</div>
+    <div class="pn-name">E-Stock Aplikasi Gudang</div>
+  </a>
+</div>
+
+<footer>
+  <div class="ft">© 2026 <span>Dia Ayu Wulansari</span></div>
+  <div class="ft">UI/UX Designer · <span>Surabaya</span></div>
+</footer>
+<script>
+const cur=document.getElementById('cur'),ring=document.getElementById('cur-ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px'});
+(function a(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a)})();
+document.querySelectorAll('a,button').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cur.style.width='18px';cur.style.height='18px';ring.style.width='50px';ring.style.height='50px'});
+  el.addEventListener('mouseleave',()=>{cur.style.width='10px';cur.style.height='10px';ring.style.width='34px';ring.style.height='34px'});
+});
+</script>
+</body>
+>>>>>>> 2f6b38fd0cd4caae14aceebd9ab5480aeae6f1c6
 </html>
