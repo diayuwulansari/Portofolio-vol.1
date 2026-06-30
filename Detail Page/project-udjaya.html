@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aplikasi Kasir UD Jaya — Dia Ayu Wulansari</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Detail Page/project-detail.css">
+</head>
+<body>
+  <div id="cur"></div>
+  <div id="cur-ring"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="../index.html" class="logo">Dia Ayu<span>.</span></a>
+    <span class="nav-tag">Case Study</span>
+    <a href="../index.html#projects" class="back-btn">← Kembali</a>
+  </nav>
+
+  <!-- HERO -->
+  <div class="proj-hero">
+    <div class="hero-bg"></div>
+    <!-- decorative phone mockups -->
+    <div class="hero-phone2"></div>
+    <div class="hero-phone">
+      <div class="phone-screen">
+        <div class="ph-header"><div class="ph-dot"></div><div style="flex:1;height:5px;background:rgba(255,255,255,.1);border-radius:2px"></div></div>
+        <div class="ph-card">
+          <div class="ph-num">Rp 2.450.000</div>
+          <div class="ph-row"></div>
+          <div class="ph-row short"></div>
+        </div>
+        <div class="ph-bar" style="height:40px;border-radius:6px;background:rgba(37,99,235,.25)"></div>
+        <div class="ph-bar"></div>
+        <div class="ph-bar short" style="width:70%"></div>
+        <div class="ph-card">
+          <div class="ph-row"></div>
+          <div class="ph-row short"></div>
+        </div>
+        <div class="ph-bar" style="height:6px"></div>
+        <div class="ph-bar" style="height:6px;width:80%"></div>
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="eyebrow">01 — Case Study · Tugas Akhir 2025</div>
+      <h1 class="proj-title">Aplikasi Keuangan<br>Kasir Berbasis Mobile<br><span style="-webkit-text-stroke:1px rgba(248,250,252,.18);color:transparent">UD Jaya</span></h1>
+      <p class="proj-sub">Merancang dan mengembangkan aplikasi kasir mobile untuk pencatatan transaksi penjualan, pembelian, dan laporan keuangan harian bagi UMKM UD Jaya.</p>
+      <div class="badge-row">
+        <span class="badge bd-blue">Tugas Akhir</span>
+        <span class="badge bd-green">✓ HKI Terdaftar</span>
+        <span class="badge bd-gray">Mobile App</span>
+        <span class="badge bd-gray">React Native</span>
+      </div>
+      <div class="hero-meta">
+        <div class="meta-item">
+          <div class="meta-lbl">Tahun</div>
+          <div class="meta-val">2025</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-lbl">Platform</div>
+          <div class="meta-val">Mobile (Android)</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-lbl">Peran</div>
+          <div class="meta-val">UI/UX + Developer</div>
+        </div>
+        <div class="meta-item">
+          <div class="meta-lbl">Hasil</div>
+          <div class="meta-val" style="color:var(--green)">↑ 30% Efisiensi</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="wrap">
+
+    <!-- Overview -->
+    <div class="sec">
+      <div class="sec-ey">Overview</div>
+      <h2 class="sec-h">Latar Belakang</h2>
+      <p class="sec-p">UD Jaya adalah sebuah usaha mikro yang masih menggunakan <strong>pencatatan manual</strong> berbasis kertas dan buku catatan untuk mengelola transaksi harian. Proses ini rawan kesalahan, membutuhkan waktu lama untuk rekap, dan menyulitkan pemilik usaha dalam memantau kondisi keuangan secara real-time.</p>
+      <p class="sec-p">Sebagai Tugas Akhir, proyek ini merancang dan mengembangkan solusi digital berbasis mobile yang sederhana, ringan, dan dapat digunakan oleh siapapun — termasuk pengguna dengan literasi digital minimal.</p>
+      <div class="quote-block">
+        <div class="quote-text">"Bagaimana kita bisa membuat sistem kasir yang semudah mencatat di buku, tapi sepintar komputer?"</div>
+        <div class="quote-sub">Problem statement utama proyek ini</div>
+      </div>
+    </div>
+
+    <!-- Problem & Goal -->
+    <div class="sec">
+      <div class="sec-ey">Problem &amp; Goal</div>
+      <h2 class="sec-h">Masalah &amp; Tujuan</h2>
+      <div class="cg3" style="margin-bottom:1.5rem">
+        <div class="ic">
+          <div class="ic-ico">📝</div>
+          <div class="ic-lbl">Masalah 1</div>
+          <div class="ic-v">Manual &amp; Lambat</div>
+          <div class="ic-s">Pencatatan transaksi masih manual di buku, rawan salah hitung dan hilang</div>
+        </div>
+        <div class="ic">
+          <div class="ic-ico">📊</div>
+          <div class="ic-lbl">Masalah 2</div>
+          <div class="ic-v">Laporan Sulit</div>
+          <div class="ic-s">Pemilik kesulitan mendapatkan laporan keuangan harian dan bulanan secara cepat</div>
+        </div>
+        <div class="ic">
+          <div class="ic-ico">🔍</div>
+          <div class="ic-lbl">Masalah 3</div>
+          <div class="ic-v">Stok Tidak Terpantau</div>
+          <div class="ic-s">Tidak ada sistem untuk memantau stok barang masuk dan keluar secara otomatis</div>
+        </div>
+      </div>
+      <div class="cg2">
+        <div class="ic" style="border-color:rgba(96,165,250,.18)">
+          <div class="ic-ico">🎯</div>
+          <div class="ic-lbl">Tujuan Utama</div>
+          <div class="ic-v">Digitalisasi Kasir</div>
+          <div class="ic-s">Membangun aplikasi mobile yang mempermudah pencatatan transaksi penjualan dan pembelian secara real-time</div>
+        </div>
+        <div class="ic" style="border-color:rgba(96,165,250,.18)">
+          <div class="ic-ico">📱</div>
+          <div class="ic-lbl">User Focus</div>
+          <div class="ic-v">Mudah Digunakan</div>
+          <div class="ic-s">Desain antarmuka yang intuitif sehingga dapat digunakan tanpa pelatihan khusus oleh pengguna awam</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Process -->
+    <div class="sec">
+      <div class="sec-ey">Design Process</div>
+      <h2 class="sec-h">Proses Perancangan</h2>
+      <div class="proc-list">
+        <div class="proc-item">
+          <div class="proc-n">01</div>
+          <div>
+            <div class="proc-t">Research &amp; Analisis Kebutuhan</div>
+            <div class="proc-d">Melakukan wawancara langsung dengan pemilik UD Jaya dan karyawan kasir untuk memahami alur kerja harian, pain point, dan harapan mereka terhadap sistem digital. Observasi proses pencatatan manual selama beberapa hari untuk mendapatkan pemahaman mendalam.</div>
+            <div class="proc-tags"><span class="ptag">User Interview</span><span class="ptag">Observasi</span><span class="ptag">User Journey</span><span class="ptag">Pain Point Analysis</span></div>
+          </div>
+        </div>
+        <div class="proc-item">
+          <div class="proc-n">02</div>
+          <div>
+            <div class="proc-t">Wireframing &amp; User Flow</div>
+            <div class="proc-d">Memetakan alur pengguna dari login hingga cetak laporan. Membuat low-fidelity wireframe untuk seluruh halaman utama: dashboard, input transaksi penjualan, pembelian, manajemen produk, dan laporan keuangan harian.</div>
+            <div class="proc-tags"><span class="ptag">Figma</span><span class="ptag">Low-fi Wireframe</span><span class="ptag">User Flow</span><span class="ptag">Information Architecture</span></div>
+          </div>
+        </div>
+        <div class="proc-item">
+          <div class="proc-n">03</div>
+          <div>
+            <div class="proc-t">UI Design &amp; Design System</div>
+            <div class="proc-d">Merancang high-fidelity interface dengan sistem warna yang konsisten, tipografi yang mudah dibaca, dan komponen yang dapat digunakan kembali. Mengutamakan keterbacaan angka dan kemudahan input data transaksi dengan satu tangan.</div>
+            <div class="proc-tags"><span class="ptag">High-fi Design</span><span class="ptag">Design System</span><span class="ptag">Color Theory</span><span class="ptag">Component Library</span></div>
+          </div>
+        </div>
+        <div class="proc-item">
+          <div class="proc-n">04</div>
+          <div>
+            <div class="proc-t">Prototyping &amp; Development</div>
+            <div class="proc-d">Membuat prototype interaktif di Figma untuk validasi alur sebelum development. Kemudian mengimplementasikan desain ke dalam kode menggunakan React Native, memastikan tampilan konsisten di berbagai ukuran layar Android.</div>
+            <div class="proc-tags"><span class="ptag">Figma Prototype</span><span class="ptag">React Native</span><span class="ptag">Android</span><span class="ptag">Responsive</span></div>
+          </div>
+        </div>
+        <div class="proc-item">
+          <div class="proc-n">05</div>
+          <div>
+            <div class="proc-t">Testing &amp; Iterasi</div>
+            <div class="proc-d">Melakukan usability testing langsung bersama pemilik dan kasir UD Jaya. Mengumpulkan feedback dan melakukan iterasi desain maupun fitur berdasarkan temuan di lapangan hingga aplikasi siap digunakan sepenuhnya.</div>
+            <div class="proc-tags"><span class="ptag">Usability Testing</span><span class="ptag">Iterasi</span><span class="ptag">UAT</span><span class="ptag">Feedback Loop</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mockups -->
+    <div class="sec">
+      <div class="sec-ey">UI Preview</div>
+      <h2 class="sec-h">Tampilan Antarmuka</h2>
+      <p class="sec-p">Desain mengutamakan kesederhanaan dengan navigasi bottom bar, warna yang kontras untuk membedakan transaksi masuk/keluar, dan visualisasi laporan yang mudah dipahami.</p>
+      <div class="cg2">
+        <div class="mock">
+          <span class="mock-lbl">Dashboard Utama</span>
+          <div class="mock-inner">
+            <span class="mock-ico">📱</span>
+            <div class="mock-note">Tambahkan screenshot<br>dashboard aplikasi di sini</div>
+          </div>
+        </div>
+        <div class="mock">
+          <span class="mock-lbl">Input Transaksi</span>
+          <div class="mock-inner">
+            <span class="mock-ico">💳</span>
+            <div class="mock-note">Tambahkan screenshot<br>form transaksi di sini</div>
+          </div>
+        </div>
+        <div class="mock">
+          <span class="mock-lbl">Laporan Keuangan</span>
+          <div class="mock-inner">
+            <span class="mock-ico">📊</span>
+            <div class="mock-note">Tambahkan screenshot<br>halaman laporan di sini</div>
+          </div>
+        </div>
+        <div class="mock">
+          <span class="mock-lbl">Manajemen Produk</span>
+          <div class="mock-inner">
+            <span class="mock-ico">📦</span>
+            <div class="mock-note">Tambahkan screenshot<br>daftar produk di sini</div>
+          </div>
+        </div>
+      </div>
+      <p class="sec-p" style="font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--fg3);margin-top:.5rem">
+        💡 Ganti placeholder di atas dengan screenshot atau mockup asli aplikasimu menggunakan tag &lt;img&gt;
+      </p>
+    </div>
+
+    <!-- Features -->
+    <div class="sec">
+      <div class="sec-ey">Key Features</div>
+      <h2 class="sec-h">Fitur Utama</h2>
+      <div class="cg3">
+        <div class="ic">
+          <div class="ic-ico">🛒</div>
+          <div class="ic-lbl">Fitur 1</div>
+          <div class="ic-v">Transaksi Penjualan</div>
+          <div class="ic-s">Input cepat transaksi penjualan dengan pilih produk, jumlah, dan total otomatis</div>
+        </div>
+        <div class="ic">
+          <div class="ic-ico">📥</div>
+          <div class="ic-lbl">Fitur 2</div>
+          <div class="ic-v">Transaksi Pembelian</div>
+          <div class="ic-s">Catat pembelian stok barang dari supplier dengan harga dan tanggal masuk</div>
+        </div>
+        <div class="ic">
+          <div class="ic-ico">📈</div>
+          <div class="ic-lbl">Fitur 3</div>
+          <div class="ic-v">Laporan Harian</div>
+          <div class="ic-s">Rekap otomatis pemasukan, pengeluaran, dan keuntungan bersih per hari</div>
+        </div>
+        <div class="ic">
+          <div class="ic-ico">📦</div>
+          <div class="ic-lbl">Fitur 4</div>
+          <div class="ic-v">Manajemen Produk</div>
+          <div class="ic-s">Kelola daftar produk, harga, dan kategori dengan mudah</div>
+        </div>
+        <div class="ic">
+          <div class="ic-ico">🔒</div>
+          <div class="ic-lbl">Fitur 5</div>
+          <div class="ic-v">Autentikasi</div>
+          <div class="ic-s">Login aman untuk melindungi data keuangan usaha</div>
+        </div>
+        <div class="ic">
+          <div class="ic-ico">📋</div>
+          <div class="ic-lbl">Fitur 6</div>
+          <div class="ic-v">Riwayat Transaksi</div>
+          <div class="ic-s">Histori lengkap semua transaksi yang dapat difilter berdasarkan tanggal</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results -->
+    <div class="sec">
+      <div class="sec-ey">Results &amp; Impact</div>
+      <h2 class="sec-h">Hasil &amp; Dampak</h2>
+      <div class="res-card">
+        <div class="res-num">30<sup>%</sup></div>
+        <div class="res-d"><strong>Peningkatan Efisiensi Pencatatan</strong><br>Waktu yang dibutuhkan untuk mencatat satu transaksi berkurang secara signifikan dibandingkan metode manual sebelumnya</div>
+      </div>
+      <div class="res-card">
+        <div class="res-num">✓</div>
+        <div class="res-d"><strong>HKI Terdaftar &amp; Tersertifikasi</strong><br>Aplikasi resmi mendapatkan Sertifikat Hak Kekayaan Intelektual (HKI) dari Kementerian Hukum dan HAM Republik Indonesia</div>
+      </div>
+      <div class="res-card">
+        <div class="res-num">0</div>
+        <div class="res-d"><strong>Kesalahan Hitung Manual</strong><br>Proses kalkulasi transaksi sepenuhnya otomatis, mengeliminasi risiko kesalahan hitung yang sering terjadi pada pencatatan manual</div>
+      </div>
+    </div>
+
+    <!-- Tech Stack -->
+    <div class="sec">
+      <div class="sec-ey">Tech Stack</div>
+      <h2 class="sec-h">Teknologi yang Digunakan</h2>
+      <div class="cg2">
+        <div class="ic">
+          <div class="ic-ico">🎨</div>
+          <div class="ic-lbl">Design</div>
+          <div class="ic-v">Figma</div>
+          <div class="ic-s">Wireframe, high-fidelity design, prototype interaktif, dan design system</div>
+        </div>
+        <div class="ic">
+          <div class="ic-ico">⚛️</div>
+          <div class="ic-lbl">Frontend</div>
+          <div class="ic-v">React Native</div>
+          <div class="ic-s">Cross-platform mobile development untuk Android dengan tampilan native</div>
+        </div>
+        <div class="ic">
+          <div class="ic-ico">🗄️</div>
+          <div class="ic-lbl">Storage</div>
+          <div class="ic-v">Local Database</div>
+          <div class="ic-s">Penyimpanan data transaksi secara lokal di perangkat</div>
+        </div>
+        <div class="ic">
+          <div class="ic-ico">💻</div>
+          <div class="ic-lbl">Editor</div>
+          <div class="ic-v">VS Code</div>
+          <div class="ic-s">Code editor utama untuk development aplikasi</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Learnings -->
+    <div class="sec">
+      <div class="sec-ey">Refleksi</div>
+      <h2 class="sec-h">Yang Saya Pelajari</h2>
+      <p class="sec-p">Proyek ini mengajarkan saya bahwa <strong>desain untuk UMKM memiliki tantangan unik</strong> — pengguna mungkin tidak terbiasa dengan aplikasi digital, sehingga setiap keputusan desain harus benar-benar mempertimbangkan kemudahan belajar dan kecepatan penggunaan.</p>
+      <p class="sec-p">Menjadi satu-satunya desainer sekaligus developer dalam proyek ini juga meningkatkan pemahaman saya tentang <strong>batasan teknis yang memengaruhi keputusan desain</strong>, dan bagaimana keduanya harus berkolaborasi dengan baik sejak awal.</p>
+      <div class="tags-row">
+        <span class="tg">User-Centered Design</span>
+        <span class="tg">UMKM Digital</span>
+        <span class="tg">React Native</span>
+        <span class="tg">End-to-End Product</span>
+        <span class="tg">Usability Testing</span>
+        <span class="tg">HKI Process</span>
+      </div>
+    </div>
+
+  </div><!-- /wrap -->
+
+  <!-- BOTTOM CTA -->
+  <div style="border-top:1px solid var(--border);background:var(--navy2);padding:3.5rem 3rem;text-align:center">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:.65rem;color:var(--accent);letter-spacing:.18em;text-transform:uppercase;margin-bottom:.9rem;display:flex;align-items:center;gap:.55rem;justify-content:center">
+      <span style="width:13px;height:1px;background:var(--accent);display:inline-block"></span>Tertarik berkolaborasi?<span style="width:13px;height:1px;background:var(--accent);display:inline-block"></span>
+    </div>
+    <h3 style="font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-bottom:.5rem">Mari Wujudkan Proyek Selanjutnya</h3>
+    <p style="font-size:.88rem;color:var(--fg2);margin-bottom:1.8rem">Saya terbuka untuk diskusi proyek baru, freelance, maupun peluang full-time.</p>
+    <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap">
+      <a href="mailto:diaayuwulansari@gmail.com" style="background:var(--blue);color:#fff;padding:.75rem 1.6rem;border-radius:4px;font-family:'Syne',sans-serif;font-weight:700;font-size:.86rem;text-decoration:none;transition:background .2s">Hubungi Saya</a>
+      <a href="index.html" style="border:1px solid var(--border2);color:var(--fg2);padding:.75rem 1.6rem;background:transparent;font-family:'JetBrains Mono',monospace;font-size:.73rem;letter-spacing:.06em;border-radius:4px;text-decoration:none">← Kembali ke Portofolio</a>
+    </div>
+  </div>
+
+  <!-- NEXT/PREV -->
+  <div class="proj-nav">
+    <a href="index.html#projects" class="pn">
+      <div class="pn-dir">← Semua Proyek</div>
+      <div class="pn-name">Lihat Semua Karya</div>
+    </a>
+    <a href="project-pln.html" class="pn right">
+      <div class="pn-dir">Proyek Berikutnya →</div>
+      <div class="pn-name">Redesign Aplikasi PLN NPS</div>
+    </a>
+  </div>
+
+  <footer>
+    <div class="ft">© 2026 <span>Dia Ayu Wulansari</span></div>
+    <div class="ft">UI/UX Designer · <span>Surabaya</span></div>
+  </footer>
+
+  <script>
+  const cur=document.getElementById('cur'),ring=document.getElementById('cur-ring');
+  let mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px'});
+  (function a(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a)})();
+  document.querySelectorAll('a,button').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{cur.style.width='18px';cur.style.height='18px';ring.style.width='50px';ring.style.height='50px'});
+    el.addEventListener('mouseleave',()=>{cur.style.width='10px';cur.style.height='10px';ring.style.width='34px';ring.style.height='34px'});
+  });
+  </script>
+</body>
+</html>

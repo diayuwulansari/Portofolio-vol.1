@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Stock Aplikasi Gudang — Dia Ayu Wulansari</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Detail Page/project-detail.css">
+
+</head>
+<body>
+<div id="cur"></div>
+<div id="cur-ring"></div>
+
+<nav>
+  <a href="../index.html" class="logo">Dia Ayu<span>.</span></a>
+  <span class="nav-tag">Case Study</span>
+  <a href="../index.html#projects" class="back-btn">← Kembali</a>
+</nav>
+
+<div class="proj-hero">
+  <div class="hero-bg"></div>
+  <div class="box-label">Inventory System</div>
+  <div class="box-deco">
+    <div class="box-row">
+      <div class="box lg">📦</div>
+      <div class="box md">📋</div>
+    </div>
+    <div class="box-row">
+      <div class="box sm">🏷️</div>
+      <div class="box lg">📊</div>
+      <div class="box sm">✅</div>
+    </div>
+    <div class="box-row">
+      <div class="box md">🔍</div>
+      <div class="box sm">⚙️</div>
+    </div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="eyebrow">03 — Case Study · 2025</div>
+    <h1 class="proj-title">E-Stock<br>Aplikasi Mobile<br><span style="-webkit-text-stroke:1px rgba(248,250,252,.18);color:transparent">Manajemen Gudang</span></h1>
+    <p class="proj-sub">Mengembangkan aplikasi mobile untuk pengelolaan stok barang gudang, lengkap dengan fitur CRUD, tracking masuk-keluar, dan laporan inventori.</p>
+    <div class="badge-row">
+      <span class="badge bd-blue">Mobile App</span>
+      <span class="badge bd-purple">Inventory System</span>
+      <span class="badge bd-green">↑ 35% Efisiensi</span>
+      <span class="badge bd-gray">React Native</span>
+    </div>
+    <div class="hero-meta">
+      <div class="meta-item">
+        <div class="meta-lbl">Tahun</div>
+        <div class="meta-val">2025</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-lbl">Platform</div>
+        <div class="meta-val">Mobile (Android)</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-lbl">Peran</div>
+        <div class="meta-val">UI/UX + Developer</div>
+      </div>
+      <div class="meta-item">
+        <div class="meta-lbl">Hasil</div>
+        <div class="meta-val" style="color:var(--green)">↑ 35% Efisiensi</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <div class="sec">
+    <div class="sec-ey">Overview</div>
+    <h2 class="sec-h">Latar Belakang</h2>
+    <p class="sec-p">Pengelolaan stok barang di gudang masih sering dilakukan secara manual menggunakan catatan fisik atau spreadsheet yang tidak real-time. Hal ini menyebabkan <strong>ketidakakuratan data stok</strong>, kesulitan melacak barang masuk dan keluar, serta proses audit yang memakan waktu lama.</p>
+    <p class="sec-p">E-Stock hadir sebagai solusi digital berbasis mobile yang memungkinkan pengelola gudang untuk <strong>memantau dan mengelola stok kapan saja dan di mana saja</strong> — langsung dari genggaman tangan.</p>
+  </div>
+
+  <div class="sec">
+    <div class="sec-ey">Core Features — CRUD</div>
+    <h2 class="sec-h">Fitur CRUD Inventori</h2>
+    <p class="sec-p">Aplikasi dibangun di atas operasi CRUD (Create, Read, Update, Delete) yang lengkap untuk pengelolaan data stok barang:</p>
+    <div class="crud-table">
+      <div class="crud-header">
+        <div>Operasi</div><div>Deskripsi</div><div>Entitas</div><div>Status</div>
+      </div>
+      <div class="crud-row">
+        <div><strong>Create</strong> — Tambah Barang</div>
+        <div>Input data barang baru ke sistem</div>
+        <div>Produk, Stok</div>
+        <div><span class="crud-badge cb-green">✓ Done</span></div>
+      </div>
+      <div class="crud-row">
+        <div><strong>Read</strong> — Lihat Stok</div>
+        <div>Tampilkan daftar dan detail stok</div>
+        <div>Semua entitas</div>
+        <div><span class="crud-badge cb-green">✓ Done</span></div>
+      </div>
+      <div class="crud-row">
+        <div><strong>Update</strong> — Edit Data</div>
+        <div>Perbarui info barang &amp; jumlah stok</div>
+        <div>Produk, Stok</div>
+        <div><span class="crud-badge cb-green">✓ Done</span></div>
+      </div>
+      <div class="crud-row">
+        <div><strong>Delete</strong> — Hapus Data</div>
+        <div>Hapus barang atau riwayat transaksi</div>
+        <div>Produk</div>
+        <div><span class="crud-badge cb-green">✓ Done</span></div>
+      </div>
+      <div class="crud-row">
+        <div><strong>Stok Masuk</strong></div>
+        <div>Catat penerimaan barang dari supplier</div>
+        <div>Stok, Riwayat</div>
+        <div><span class="crud-badge cb-green">✓ Done</span></div>
+      </div>
+      <div class="crud-row">
+        <div><strong>Stok Keluar</strong></div>
+        <div>Catat pengambilan/pengiriman barang</div>
+        <div>Stok, Riwayat</div>
+        <div><span class="crud-badge cb-green">✓ Done</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-ey">Design Process</div>
+    <h2 class="sec-h">Proses Pengembangan</h2>
+    <div class="proc-list">
+      <div class="proc-item">
+        <div class="proc-n">01</div>
+        <div>
+          <div class="proc-t">Analisis Kebutuhan &amp; User Story</div>
+          <div class="proc-d">Mendefinisikan kebutuhan sistem berdasarkan skenario penggunaan nyata di lingkungan gudang. Membuat user story untuk setiap peran pengguna — admin gudang dan petugas lapangan — dan memetakan alur kerja mereka sehari-hari.</div>
+          <div class="proc-tags"><span class="ptag">User Story</span><span class="ptag">Requirements Analysis</span><span class="ptag">Use Case</span></div>
+        </div>
+      </div>
+      <div class="proc-item">
+        <div class="proc-n">02</div>
+        <div>
+          <div class="proc-t">Perancangan Database &amp; Arsitektur</div>
+          <div class="proc-d">Merancang struktur database untuk entitas utama: Produk, Kategori, Transaksi Masuk, Transaksi Keluar, dan Riwayat. Memastikan relasi antar tabel memungkinkan laporan stok yang akurat dan mudah diambil.</div>
+          <div class="proc-tags"><span class="ptag">Database Design</span><span class="ptag">Entity Relationship</span><span class="ptag">System Architecture</span></div>
+        </div>
+      </div>
+      <div class="proc-item">
+        <div class="proc-n">03</div>
+        <div>
+          <div class="proc-t">UI Design di Figma</div>
+          <div class="proc-d">Merancang antarmuka yang bersih dan fungsional dengan fokus pada kemudahan scan visual — daftar stok harus langsung bisa dibaca dengan cepat, status stok rendah ditandai dengan warna menonjol, dan aksi utama mudah dijangkau dengan ibu jari.</div>
+          <div class="proc-tags"><span class="ptag">Figma</span><span class="ptag">Mobile UI</span><span class="ptag">Component Design</span><span class="ptag">Color System</span></div>
+        </div>
+      </div>
+      <div class="proc-item">
+        <div class="proc-n">04</div>
+        <div>
+          <div class="proc-t">Implementasi React Native</div>
+          <div class="proc-d">Mengimplementasikan semua halaman dan fitur CRUD menggunakan React Native. Memastikan performa scrolling yang smooth saat daftar stok panjang, dan transisi antar halaman yang responsif.</div>
+          <div class="proc-tags"><span class="ptag">React Native</span><span class="ptag">State Management</span><span class="ptag">Local Storage</span><span class="ptag">Navigation</span></div>
+        </div>
+      </div>
+      <div class="proc-item">
+        <div class="proc-n">05</div>
+        <div>
+          <div class="proc-t">Testing &amp; Quality Assurance</div>
+          <div class="proc-d">Melakukan pengujian fungsional untuk setiap operasi CRUD, memastikan tidak ada data yang hilang atau korup. Pengujian dilakukan di beberapa perangkat Android dengan spesifikasi berbeda untuk memastikan kompatibilitas.</div>
+          <div class="proc-tags"><span class="ptag">Functional Testing</span><span class="ptag">UAT</span><span class="ptag">Bug Fixing</span><span class="ptag">Cross-Device</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-ey">Key Features</div>
+    <h2 class="sec-h">Fitur Unggulan</h2>
+    <div class="cg3">
+      <div class="ic">
+        <div class="ic-ico">📦</div>
+        <div class="ic-lbl">Fitur 1</div>
+        <div class="ic-v">Manajemen Produk</div>
+        <div class="ic-s">Tambah, edit, hapus produk dengan kategori, kode barang, dan foto produk</div>
+      </div>
+      <div class="ic">
+        <div class="ic-ico">📥</div>
+        <div class="ic-lbl">Fitur 2</div>
+        <div class="ic-v">Stok Masuk</div>
+        <div class="ic-s">Catat penerimaan barang dari supplier dengan tanggal, jumlah, dan catatan</div>
+      </div>
+      <div class="ic">
+        <div class="ic-ico">📤</div>
+        <div class="ic-lbl">Fitur 3</div>
+        <div class="ic-v">Stok Keluar</div>
+        <div class="ic-s">Catat pengiriman atau penggunaan barang dengan tujuan dan penanggung jawab</div>
+      </div>
+      <div class="ic">
+        <div class="ic-ico">📊</div>
+        <div class="ic-lbl">Fitur 4</div>
+        <div class="ic-v">Dashboard Stok</div>
+        <div class="ic-s">Overview total produk, stok menipis, dan aktivitas terkini dalam satu tampilan</div>
+      </div>
+      <div class="ic">
+        <div class="ic-ico">🔍</div>
+        <div class="ic-lbl">Fitur 5</div>
+        <div class="ic-v">Pencarian &amp; Filter</div>
+        <div class="ic-s">Temukan produk dengan cepat melalui search bar dan filter kategori</div>
+      </div>
+      <div class="ic">
+        <div class="ic-ico">📋</div>
+        <div class="ic-lbl">Fitur 6</div>
+        <div class="ic-v">Riwayat Transaksi</div>
+        <div class="ic-s">Log lengkap semua aktivitas stok masuk dan keluar dengan timeline</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-ey">UI Preview</div>
+    <h2 class="sec-h">Tampilan Antarmuka</h2>
+    <div class="cg2">
+      <div class="mock">
+        <span class="mock-lbl">Dashboard Stok</span>
+        <div class="mock-inner"><span class="mock-ico">📊</span><div class="mock-note">Tambahkan screenshot<br>dashboard stok di sini</div></div>
+      </div>
+      <div class="mock">
+        <span class="mock-lbl">Daftar Produk</span>
+        <div class="mock-inner"><span class="mock-ico">📦</span><div class="mock-note">Tambahkan screenshot<br>daftar produk di sini</div></div>
+      </div>
+      <div class="mock">
+        <span class="mock-lbl">Form Input Stok</span>
+        <div class="mock-inner"><span class="mock-ico">📝</span><div class="mock-note">Tambahkan screenshot<br>form input stok di sini</div></div>
+      </div>
+      <div class="mock">
+        <span class="mock-lbl">Riwayat Transaksi</span>
+        <div class="mock-inner"><span class="mock-ico">🕐</span><div class="mock-note">Tambahkan screenshot<br>riwayat transaksi di sini</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-ey">Results &amp; Impact</div>
+    <h2 class="sec-h">Hasil &amp; Dampak</h2>
+    <div class="res-card">
+      <div class="res-num">35<sup>%</sup></div>
+      <div class="res-d"><strong>Peningkatan Efisiensi Pengelolaan Stok</strong><br>Proses pencatatan dan pengecekan stok yang sebelumnya dilakukan manual kini dapat diselesaikan jauh lebih cepat dan akurat</div>
+    </div>
+    <div class="res-card">
+      <div class="res-num">↑</div>
+      <div class="res-d"><strong>Akurasi Data Stok Real-Time</strong><br>Tidak ada lagi selisih antara catatan fisik dan data sistem karena semua transaksi langsung terekam saat terjadi</div>
+    </div>
+    <div class="res-card">
+      <div class="res-num">0</div>
+      <div class="res-d"><strong>Kehilangan Data</strong><br>Semua data tersimpan secara digital dan terstruktur, tidak lagi bergantung pada catatan fisik yang rawan hilang atau rusak</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-ey">Refleksi</div>
+    <h2 class="sec-h">Yang Saya Pelajari</h2>
+    <p class="sec-p">Proyek E-Stock mengajarkan saya pentingnya <strong>kesederhanaan dalam UI untuk aplikasi operasional</strong>. Berbeda dengan aplikasi consumer yang mengejar estetika, aplikasi gudang harus mengutamakan kecepatan dan kejelasan — pengguna tidak punya waktu untuk mempelajari interface yang rumit ketika sedang sibuk di lapangan.</p>
+    <p class="sec-p">Saya juga belajar banyak tentang <strong>pengujian berbasis skenario nyata</strong> — setiap fitur diuji dalam konteks workflow aktual, bukan hanya unit test, untuk memastikan aplikasi benar-benar membantu pengguna di lapangan.</p>
+    <div class="tags-row">
+      <span class="tg">Mobile UX</span>
+      <span class="tg">Inventory Management</span>
+      <span class="tg">CRUD Development</span>
+      <span class="tg">Operational App Design</span>
+      <span class="tg">React Native</span>
+      <span class="tg">Usability Testing</span>
+    </div>
+  </div>
+
+</div>
+
+<div style="border-top:1px solid var(--border);background:var(--navy2);padding:3.5rem 3rem;text-align:center">
+  <div style="font-family:'JetBrains Mono',monospace;font-size:.65rem;color:var(--accent);letter-spacing:.18em;text-transform:uppercase;margin-bottom:.9rem;display:flex;align-items:center;gap:.55rem;justify-content:center">
+    <span style="width:13px;height:1px;background:var(--accent);display:inline-block"></span>Tertarik berkolaborasi?<span style="width:13px;height:1px;background:var(--accent);display:inline-block"></span>
+  </div>
+  <h3 style="font-family:'Syne',sans-serif;font-size:1.6rem;font-weight:700;letter-spacing:-.02em;margin-bottom:.5rem">Mari Wujudkan Proyek Selanjutnya</h3>
+  <p style="font-size:.88rem;color:var(--fg2);margin-bottom:1.8rem">Saya terbuka untuk diskusi proyek baru, freelance, maupun peluang full-time.</p>
+  <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap">
+    <a href="mailto:diaayuwulansari@gmail.com" style="background:var(--blue);color:#fff;padding:.75rem 1.6rem;border-radius:4px;font-family:'Syne',sans-serif;font-weight:700;font-size:.86rem;text-decoration:none">Hubungi Saya</a>
+    <a href="index.html" style="border:1px solid var(--border2);color:var(--fg2);padding:.75rem 1.6rem;background:transparent;font-family:'JetBrains Mono',monospace;font-size:.73rem;letter-spacing:.06em;border-radius:4px;text-decoration:none">← Kembali ke Portofolio</a>
+  </div>
+</div>
+
+<div class="proj-nav">
+  <a href="project-pln.html" class="pn">
+    <div class="pn-dir">← Proyek Sebelumnya</div>
+    <div class="pn-name">Redesign Aplikasi PLN NPS</div>
+  </a>
+  <a href="project-udjaya.html" class="pn right">
+    <div class="pn-dir">Lihat Lagi →</div>
+    <div class="pn-name">Aplikasi Kasir UD Jaya</div>
+  </a>
+</div>
+
+<footer>
+  <div class="ft">© 2026 <span>Dia Ayu Wulansari</span></div>
+  <div class="ft">UI/UX Designer · <span>Surabaya</span></div>
+</footer>
+<script>
+const cur=document.getElementById('cur'),ring=document.getElementById('cur-ring');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px'});
+(function a(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a)})();
+document.querySelectorAll('a,button').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{cur.style.width='18px';cur.style.height='18px';ring.style.width='50px';ring.style.height='50px'});
+  el.addEventListener('mouseleave',()=>{cur.style.width='10px';cur.style.height='10px';ring.style.width='34px';ring.style.height='34px'});
+});
+</script>
+</body>
+</html>
