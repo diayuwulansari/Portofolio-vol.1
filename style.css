@@ -968,6 +968,14 @@ section{padding:5.5rem 3rem}
   font-size:2.5rem;
 }
 
+/* Slightly lower the embedded PDF so the top of the certificate is visible */
+.sert-thumb embed,
+.sert-thumb object,
+.sert-thumb iframe{
+  transform: translateY(10px);
+  display:block;
+}
+
 .sert-body{
   padding:1.1rem
 }
