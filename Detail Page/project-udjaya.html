@@ -11,17 +11,17 @@
   <div id="cur"></div>
   <div id="cur-ring"></div>
 
-  <!-- NAV -->
   <nav>
     <a href="../index.html" class="logo">Dia Ayu<span>.</span></a>
     <span class="nav-tag">Case Study</span>
     <a href="../index.html#projects" class="back-btn">← Kembali</a>
   </nav>
 
-  <!-- HERO -->
   <div class="proj-hero">
     <div class="hero-bg"></div>
-    <!-- decorative phone mockups -->
+    
+    <canvas id="topoCanvas"></canvas>
+
     <div class="hero-phone2"></div>
     <div class="hero-phone">
       <div class="phone-screen">
@@ -45,7 +45,9 @@
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <div class="eyebrow">01 — Case Study · Tugas Akhir 2025</div>
-      <h1 class="proj-title">Aplikasi Keuangan<br>Kasir Berbasis Mobile<br><span style="-webkit-text-stroke:1px rgba(248,250,252,.18);color:transparent">UD Jaya</span></h1>
+      
+      <h1 class="proj-title">Aplikasi Keuangan<br>Kasir Berbasis Mobile<br><span style="-webkit-text-stroke:1px #696969;color:transparent">UD Jaya</span></h1>
+      
       <p class="proj-sub">Merancang dan mengembangkan aplikasi kasir mobile untuk pencatatan transaksi penjualan, pembelian, dan laporan keuangan harian bagi UMKM UD Jaya.</p>
       <div class="badge-row">
         <span class="badge bd-blue">Tugas Akhir</span>
@@ -74,10 +76,8 @@
     </div>
   </div>
 
-  <!-- CONTENT -->
   <div class="wrap">
 
-    <!-- Overview -->
     <div class="sec">
       <div class="sec-ey">Overview</div>
       <h2 class="sec-h">Latar Belakang</h2>
@@ -89,7 +89,6 @@
       </div>
     </div>
 
-    <!-- Problem & Goal -->
     <div class="sec">
       <div class="sec-ey">Problem &amp; Goal</div>
       <h2 class="sec-h">Masalah &amp; Tujuan</h2>
@@ -129,7 +128,6 @@
       </div>
     </div>
 
-    <!-- Process -->
     <div class="sec">
       <div class="sec-ey">Design Process</div>
       <h2 class="sec-h">Proses Perancangan</h2>
@@ -177,7 +175,6 @@
       </div>
     </div>
 
-    <!-- Mockups -->
     <div class="sec">
       <div class="sec-ey">UI Preview</div>
       <h2 class="sec-h">Tampilan Antarmuka</h2>
@@ -186,42 +183,30 @@
         <div class="mock">
           <span class="mock-lbl">Dashboard Utama</span>
           <div class="mock-inner">
-            <!-- <span class="mock-ico">📱</span>
-            <div class="mock-note">Tambahkan screenshot<br>dashboard aplikasi di sini</div> -->
-            <img src="../Detail Page/img/ud jaya dashboard.jpg" lt="Dashboard Utama" class="mock-img">
+            <img src="../Detail Page/img/ud jaya dashboard.jpg" alt="Dashboard Utama" class="mock-img">
           </div>
         </div>
         <div class="mock">
           <span class="mock-lbl">Input Transaksi</span>
           <div class="mock-inner">
-            <!-- <span class="mock-ico">💳</span>
-            <div class="mock-note">Tambahkan screenshot<br>form transaksi di sini</div> -->
-            <img src="../Detail Page/img/Input transaksi.jpg" lt="Dashboard Utama" class="mock-img">
+            <img src="../Detail Page/img/Input transaksi.jpg" alt="Input Transaksi" class="mock-img">
           </div>
         </div>
         <div class="mock">
           <span class="mock-lbl">Laporan Keuangan</span>
           <div class="mock-inner">
-            <!-- <span class="mock-ico">📊</span>
-            <div class="mock-note">Tambahkan screenshot<br>halaman laporan di sini</div> -->
-            <img src="../Detail Page/img/laporan keuangan.jpg" lt="Dashboard Utama" class="mock-img">
+            <img src="../Detail Page/img/laporan keuangan.jpg" alt="Laporan Keuangan" class="mock-img">
           </div>
         </div>
         <div class="mock">
           <span class="mock-lbl">Manajemen Produk</span>
           <div class="mock-inner">
-            <!-- <span class="mock-ico">📦</span>
-            <div class="mock-note">Tambahkan screenshot<br>daftar produk di sini</div> -->
-            <img src="../Detail Page/img/data barang.jpg" lt="Dashboard Utama" class="mock-img">
+            <img src="../Detail Page/img/data barang.jpg" alt="Manajemen Produk" class="mock-img">
           </div>
         </div>
       </div>
-      <p class="sec-p" style="font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--fg3);margin-top:.5rem">
-        💡 Ganti placeholder di atas dengan screenshot atau mockup asli aplikasimu menggunakan tag &lt;img&gt;
-      </p>
     </div>
 
-    <!-- Features -->
     <div class="sec">
       <div class="sec-ey">Key Features</div>
       <h2 class="sec-h">Fitur Utama</h2>
@@ -265,7 +250,6 @@
       </div>
     </div>
 
-    <!-- Results -->
     <div class="sec">
       <div class="sec-ey">Results &amp; Impact</div>
       <h2 class="sec-h">Hasil &amp; Dampak</h2>
@@ -283,7 +267,6 @@
       </div>
     </div>
 
-    <!-- Tech Stack -->
     <div class="sec">
       <div class="sec-ey">Tech Stack</div>
       <h2 class="sec-h">Teknologi yang Digunakan</h2>
@@ -315,7 +298,6 @@
       </div>
     </div>
 
-    <!-- Learnings -->
     <div class="sec">
       <div class="sec-ey">Refleksi</div>
       <h2 class="sec-h">Yang Saya Pelajari</h2>
@@ -331,10 +313,7 @@
       </div>
     </div>
 
-  </div><!-- /wrap -->
-
-  <!-- BOTTOM CTA -->
-  <div style="border-top:1px solid var(--border);background:var(--navy2);padding:3.5rem 3rem;text-align:center">
+  </div><div style="border-top:1px solid var(--border);background:var(--navy2);padding:3.5rem 3rem;text-align:center">
     <div style="font-family:'JetBrains Mono',monospace;font-size:.65rem;color:var(--accent);letter-spacing:.18em;text-transform:uppercase;margin-bottom:.9rem;display:flex;align-items:center;gap:.55rem;justify-content:center">
       <span style="width:13px;height:1px;background:var(--accent);display:inline-block"></span>Tertarik berkolaborasi?<span style="width:13px;height:1px;background:var(--accent);display:inline-block"></span>
     </div>
@@ -342,13 +321,12 @@
     <p style="font-size:.88rem;color:var(--fg2);margin-bottom:1.8rem">Saya terbuka untuk diskusi proyek baru, freelance, maupun peluang full-time.</p>
     <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap">
       <a href="mailto:diaayuwulansari@gmail.com" style="background:var(--blue);color:#fff;padding:.75rem 1.6rem;border-radius:4px;font-family:'Syne',sans-serif;font-weight:700;font-size:.86rem;text-decoration:none;transition:background .2s">Hubungi Saya</a>
-      <a href="index.html" style="border:1px solid var(--border2);color:var(--fg2);padding:.75rem 1.6rem;background:transparent;font-family:'JetBrains Mono',monospace;font-size:.73rem;letter-spacing:.06em;border-radius:4px;text-decoration:none">← Kembali ke Portofolio</a>
+      <a href="../index.html" style="border:1px solid var(--border2);color:var(--fg2);padding:.75rem 1.6rem;background:transparent;font-family:'JetBrains Mono',monospace;font-size:.73rem;letter-spacing:.06em;border-radius:4px;text-decoration:none">← Kembali ke Portofolio</a>
     </div>
   </div>
 
-  <!-- NEXT/PREV -->
   <div class="proj-nav">
-    <a href="index.html#projects" class="pn">
+    <a href="../index.html#projects" class="pn">
       <div class="pn-dir">← Semua Proyek</div>
       <div class="pn-name">Lihat Semua Karya</div>
     </a>
@@ -363,15 +341,6 @@
     <div class="ft">UI/UX Designer · <span>Surabaya</span></div>
   </footer>
 
-  <script>
-  const cur=document.getElementById('cur'),ring=document.getElementById('cur-ring');
-  let mx=0,my=0,rx=0,ry=0;
-  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px'});
-  (function a(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a)})();
-  document.querySelectorAll('a,button').forEach(el=>{
-    el.addEventListener('mouseenter',()=>{cur.style.width='18px';cur.style.height='18px';ring.style.width='50px';ring.style.height='50px'});
-    el.addEventListener('mouseleave',()=>{cur.style.width='10px';cur.style.height='10px';ring.style.width='34px';ring.style.height='34px'});
-  });
-  </script>
+  <script src="../script.js"></script>
 </body>
 </html>

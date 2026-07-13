@@ -142,8 +142,11 @@ nav {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: 5rem 3rem 4rem; 
+    
+    /* UBAH BAGIAN INI: Dari flex-end menjadi center */
+    justify-content: center; 
+    
+    padding: 6rem 3rem; /* Sesuaikan padding agar atas-bawahnya seimbang */
     position: relative;
     overflow: hidden;
 }
@@ -735,6 +738,105 @@ footer {
 
 .ft span {
     color: var(--accent);
+}
+
+/* ─── COMPARE GRID (SEBELUM VS SESUDAH) ─── */
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.compare-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.compare-header {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0.8rem 1.2rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+/* Warna Pastel Merah untuk Sebelum */
+.compare-header.before {
+  background: var(--red-bg);
+  color: var(--red);
+  border: 1px solid var(--red-b);
+}
+
+/* Warna Pastel Hijau untuk Sesudah */
+.compare-header.after {
+  background: var(--green-bg);
+  color: var(--green);
+  border: 1px solid var(--green-b);
+}
+
+.compare-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+/* Styling Card untuk setiap poin */
+.compare-item {
+  background: var(--navy3); /* Putih bersih */
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  font-size: 0.88rem;
+  color: var(--fg2);
+  line-height: 1.68;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.compare-item:hover {
+  border-color: rgba(0, 0, 0, 0.14);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+}
+
+.ci-ico {
+  font-size: 1.3rem;
+  line-height: 1;
+  margin-top: 2px;
+  flex-shrink: 0; /* Agar emoji tidak gepeng kalau teksnya panjang */
+}
+
+/* Responsive agar jadi satu kolom memanjang ke bawah saat dibuka di HP */
+@media(max-width: 768px) {
+  .compare-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ─── ANIMASI CANVAS TOPOGRAFI ─── */
+#topoCanvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: 1; /* Pastikan ada di bawah konten (z-index konten biasanya 2 atau 3) */
+    pointer-events: none; /* Supaya klik mouse tembus ke elemen di bawahnya */
+    opacity: 0.7; /* Atur tingkat kejelasan garisnya (0.0 s/d 1.0) */
+}
+
+/* Responsif untuk layar HP */
+@media(max-width: 768px) {
+    #topoCanvas {
+        width: 100%;
+        opacity: 0.3; /* Sedikit diredupkan di HP agar teks utama tetap mudah dibaca */
+    }
 }
 
 /* ─── RESPONSIVE LAYOUTS ─── */

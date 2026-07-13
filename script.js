@@ -202,3 +202,70 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// ==========================================
+// KODE ANIMASI CANVAS TOPOGRAFI (LIGHT MODE)
+// ==========================================
+const canvas = document.getElementById('topoCanvas');
+
+if (canvas) {
+    const ctx = canvas.getContext('2d');
+    let width, height;
+    let lines = [];
+
+    // Fungsi untuk menyesuaikan ukuran canvas dengan layar
+    function resize() {
+        width = canvas.width = canvas.offsetWidth;
+        height = canvas.height = canvas.offsetHeight;
+    }
+
+    window.addEventListener('resize', resize);
+    resize();
+
+    // Konfigurasi jumlah dan properti gelombang topografi
+    const lineCount = 20; // Jumlah garis
+    for (let i = 0; i < lineCount; i++) {
+        lines.push({
+            yOffset: (height / lineCount) * i,
+            amplitude: 40 + Math.random() * 60,   // Tinggi gelombang
+            frequency: 0.001 + Math.random() * 0.002, // Kerapatan gelombang
+            phase: Math.random() * Math.PI * 2,
+            speed: 0.002 + Math.random() * 0.005  // Kecepatan gerak (sangat pelan)
+        });
+    }
+
+    // Fungsi untuk menggambar dan menganimasi
+    function draw() {
+        ctx.clearRect(0, 0, width, height);
+        
+        // --- PENGATURAN WARNA GARIS (Sesuaikan di sini) ---
+        ctx.lineWidth = 1.5;
+        // Warna abu-abu transparan agar cocok dengan background putih
+        ctx.strokeStyle = 'rgba(0, 0, 0, 0.8)'; 
+        
+        lines.forEach((line) => {
+            ctx.beginPath();
+            for (let x = 0; x <= width; x += 20) {
+                // Rumus matematika agar gelombangnya terlihat organik (tidak kaku)
+                const y = line.yOffset 
+                        + Math.sin(x * line.frequency + line.phase) * line.amplitude
+                        + Math.cos(x * (line.frequency * 0.5) + line.phase * 1.5) * (line.amplitude * 0.5);
+                
+                if (x === 0) {
+                    ctx.moveTo(x, y);
+                } else {
+                    ctx.lineTo(x, y);
+                }
+            }
+            ctx.stroke();
+            
+            // Animasi bergerak mengalir
+            line.phase += line.speed;
+        });
+        
+        requestAnimationFrame(draw);
+    }
+    
+    // Jalankan animasi
+    draw();
+}

@@ -20,6 +20,9 @@
 
 <div class="proj-hero">
   <div class="hero-bg"></div>
+  
+  <canvas id="topoCanvas"></canvas>
+
   <div class="box-label">Inventory System</div>
   <div class="box-deco">
     <div class="box-row">
@@ -39,7 +42,9 @@
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <div class="eyebrow">03 — Case Study · 2025</div>
-    <h1 class="proj-title">E-Stock<br>Aplikasi Mobile<br><span style="-webkit-text-stroke:1px rgba(248,250,252,.18);color:transparent">Manajemen Gudang</span></h1>
+    
+    <h1 class="proj-title">E-Stock<br>Aplikasi Mobile<br><span style="-webkit-text-stroke:1px #696969;color:transparent">Manajemen Gudang</span></h1>
+    
     <p class="proj-sub">Mengembangkan aplikasi mobile untuk pengelolaan stok barang gudang, lengkap dengan fitur CRUD, tracking masuk-keluar, dan laporan inventori.</p>
     <div class="badge-row">
       <span class="badge bd-blue">Mobile App</span>
@@ -279,7 +284,7 @@
   <p style="font-size:.88rem;color:var(--fg2);margin-bottom:1.8rem">Saya terbuka untuk diskusi proyek baru, freelance, maupun peluang full-time.</p>
   <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap">
     <a href="mailto:diaayuwulansari@gmail.com" style="background:var(--blue);color:#fff;padding:.75rem 1.6rem;border-radius:4px;font-family:'Syne',sans-serif;font-weight:700;font-size:.86rem;text-decoration:none">Hubungi Saya</a>
-    <a href="index.html" style="border:1px solid var(--border2);color:var(--fg2);padding:.75rem 1.6rem;background:transparent;font-family:'JetBrains Mono',monospace;font-size:.73rem;letter-spacing:.06em;border-radius:4px;text-decoration:none">← Kembali ke Portofolio</a>
+    <a href="../index.html" style="border:1px solid var(--border2);color:var(--fg2);padding:.75rem 1.6rem;background:transparent;font-family:'JetBrains Mono',monospace;font-size:.73rem;letter-spacing:.06em;border-radius:4px;text-decoration:none">← Kembali ke Portofolio</a>
   </div>
 </div>
 
@@ -298,15 +303,8 @@
   <div class="ft">© 2026 <span>Dia Ayu Wulansari</span></div>
   <div class="ft">UI/UX Designer · <span>Surabaya</span></div>
 </footer>
-<script>
-const cur=document.getElementById('cur'),ring=document.getElementById('cur-ring');
-let mx=0,my=0,rx=0,ry=0;
-document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cur.style.left=mx+'px';cur.style.top=my+'px'});
-(function a(){rx+=(mx-rx)*.1;ry+=(my-ry)*.1;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(a)})();
-document.querySelectorAll('a,button').forEach(el=>{
-  el.addEventListener('mouseenter',()=>{cur.style.width='18px';cur.style.height='18px';ring.style.width='50px';ring.style.height='50px'});
-  el.addEventListener('mouseleave',()=>{cur.style.width='10px';cur.style.height='10px';ring.style.width='34px';ring.style.height='34px'});
-});
-</script>
+
+<script src="../script.js"></script>
+
 </body>
 </html>
